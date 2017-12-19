@@ -15,17 +15,9 @@ public class MessageListener implements IListener<MessageEvent>{
     public void handle(MessageEvent event) {
 
         //filters de bot messages en messages die niet met '!' beginnen.
-        if (event.getAuthor().isBot() == false && event.getMessage().getFormattedContent().startsWith("!")){
-            //filtert de command
-            String command;
-            String content;
-            if(event.getMessage().getFormattedContent().contains(" ")){
-                command = event.getMessage().getFormattedContent().substring(1,event.getMessage().getFormattedContent().indexOf(" "));
-                content = event.getMessage().getFormattedContent().substring(event.getMessage().getFormattedContent().indexOf(" ")+1);
-            }
-            else{
-                command = event.getMessage().getFormattedContent().substring(1);
-            }
+        if (event.getAuthor().isBot() == false){
+
+            Command command = new Command(event.getMessage().getFormattedContent());
 
 
             //filtert de tekst die na het command komt
@@ -33,7 +25,7 @@ public class MessageListener implements IListener<MessageEvent>{
 
             //event.getMessage().reply("gave the command: " + command);
 
-            switch (command){
+            switch (command.getCommand()){
                 case "uitschrijven":
                     event.getMessage().getChannel().sendMessage("hier is de link om je uit te schrijven:\n\n https://fontys.nl/Studeren/Aanmelden/Uitschrijven.htm");
                     break;
