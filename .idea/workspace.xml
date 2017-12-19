@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97a66ffb-a44a-42e7-8a56-bd33f9dadc37" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="97a66ffb-a44a-42e7-8a56-bd33f9dadc37" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +16,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="252">
               <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="MessageListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MessageListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="630">
               <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="252">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,7 +51,7 @@
       <file leaf-file-name="EventDispatcher.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/github/austinv11/Discord4J/2.9.2/Discord4J-2.9.2-shaded.jar!/sx/blah/discord/api/events/EventDispatcher.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6426">
+            <state relative-caret-position="6468">
               <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
               <folding />
             </state>
@@ -83,7 +81,7 @@
       <file leaf-file-name="GoogleAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GoogleAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="357">
               <caret line="17" column="158" lean-forward="false" selection-start-line="17" selection-start-column="150" selection-end-line="17" selection-end-column="158" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,6 +148,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,10 +180,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,6 +623,7 @@
       <workItem from="1511859534719" duration="11600000" />
       <workItem from="1513071237071" duration="7301000" />
       <workItem from="1513672854561" duration="2555000" />
+      <workItem from="1513676627714" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="voor bryan :)">
       <created>1511262085294</created>
@@ -658,7 +657,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44232000" />
+    <option name="totallyTimeSpent" value="44234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -710,14 +709,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Command.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
@@ -1054,7 +1045,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/austinv11/Discord4J/2.9.2/Discord4J-2.9.2-shaded.jar!/sx/blah/discord/api/events/EventDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6426">
+        <state relative-caret-position="6468">
           <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
           <folding />
         </state>
@@ -1078,7 +1069,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MessageListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="630">
           <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1088,7 +1079,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="252">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1099,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GoogleAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="357">
           <caret line="17" column="158" lean-forward="false" selection-start-line="17" selection-start-column="150" selection-end-line="17" selection-end-column="158" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1109,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="252">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
