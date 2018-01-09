@@ -8,7 +8,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="dbi359166" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/recources/META-INF/persistance.xml" />
       </configuration>
     </facet>
@@ -102,5 +104,7 @@
     <orderEntry type="library" name="Maven: com.koloboke:koloboke-impl-common-jdk8:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.koloboke:koloboke-api-jdk8:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:15.0" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
