@@ -1,12 +1,14 @@
+package Model;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name="Command")
+
 public class Command {
     
     @Id
@@ -16,7 +18,10 @@ public class Command {
     private String prefix;
     private String command;
     private String content;
-    
+
+    public Command() {
+    }
+
     public String getPrefix() {
         return prefix;
     }
@@ -40,9 +45,6 @@ public class Command {
     public void setContent(String content) {
         this.content = content;
     }
-
-
-
 
     public Command(String Message) {
         this.prefix = Message.substring(0,1);

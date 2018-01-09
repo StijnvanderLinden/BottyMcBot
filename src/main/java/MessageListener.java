@@ -1,12 +1,6 @@
-import sx.blah.discord.api.events.Event;
+import Model.Command;
 import sx.blah.discord.api.events.IListener;
-import sx.blah.discord.handle.impl.events.ReadyEvent;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageEvent;
-import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
-import sx.blah.discord.handle.impl.events.guild.channel.message.MessageSendEvent;
-import sx.blah.discord.handle.impl.obj.Message;
-
-import java.nio.channels.Channel;
 
 public class MessageListener implements IListener<MessageEvent>{
 
