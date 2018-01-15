@@ -1,6 +1,4 @@
-package Model;
-
-import Entities.Commandable;
+package DAO;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,10 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Entity
+@Table(name="Command")
 
-public class Command implements Commandable {
-    
+public class Command {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String prefix;
