@@ -2,5 +2,5 @@ package Model;
 
 import Entities.User;
 
-public class Admin implements User {
+public class Gebruiker implements User {
 }

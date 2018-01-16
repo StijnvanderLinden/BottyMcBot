@@ -1,11 +1,11 @@
+import ORM.ORMCommand;
 import org.jetbrains.annotations.Nullable;
-import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
 import sx.blah.discord.api.events.EventDispatcher;
-import sx.blah.discord.api.internal.DiscordClientImpl;
-import sx.blah.discord.handle.impl.events.guild.channel.message.MessageSendEvent;
-import sx.blah.discord.handle.impl.obj.Message;
-import sx.blah.discord.util.DiscordException;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 /**
  * Created by Stijn on 21-11-2017.
@@ -23,9 +23,28 @@ public class Main {
 
     @Nullable
     public static IDiscordClient createClient(String token, boolean login) { // Returns a new instance of the Discord client
-        ClientBuilder clientBuilder = new ClientBuilder(); // Creates the ClientBuilder instance
-        clientBuilder.withToken(token); // Adds the login info to the builder
-        try {
+        //ClientBuilder clientBuilder = new ClientBuilder(); // Creates the ClientBuilder instance
+        //clientBuilder.withToken(token); // Adds the login info to the builder
+        final EntityManagerFactory emf = Persistence.createEntityManagerFactory("dbi359166");
+
+        EntityManager entityManager = Persistence.createEntityManagerFactory("Discordbot").createEntityManager();
+
+
+        entityManager.getTransaction().begin();
+
+        ORMCommand cmd = new ORMCommand();
+        cmd.setCommand("test");
+
+
+        entityManager.persist(cmd);
+        entityManager.getTransaction().commit();
+
+        entityManager.close();
+
+        return null;
+
+
+        /*try {
             if (login) {
                 return clientBuilder.login(); // Creates the client instance and logs the client in
             } else {
@@ -34,7 +53,7 @@ public class Main {
         } catch (DiscordException e) { // This is thrown if there was a problem building the client
             e.printStackTrace();
             return null;
-        }
+        }*/
 
     }
 

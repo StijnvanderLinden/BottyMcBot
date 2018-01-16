@@ -1,4 +1,4 @@
-package Model;
+package ORM;
 
 import Entities.Commandable;
 
@@ -8,17 +8,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Entity
+@Table(name="Command")
 
-public class Command implements Commandable {
-    
+public class ORMCommand implements Commandable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String prefix;
     private String command;
     private String content;
 
-    public Command() {
+    public ORMCommand() {
     }
 
     public String getPrefix() {
@@ -45,7 +48,7 @@ public class Command implements Commandable {
         this.content = content;
     }
 
-    public Command(String Message) {
+    public ORMCommand(String Message) {
         this.prefix = Message.substring(0,1);
         if (prefix.equals("!")){
             if (Message.contains(" ")){
