@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class Commandmanager {
 
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("dbi356103");
+    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("database");
 
     public void getCommandById(int commandId) {
         EntityManager em = emf.createEntityManager();
