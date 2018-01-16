@@ -16,7 +16,7 @@ public class Commandmanager {
 
     private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("dbi356103");
 
-    public void register(int commandId) {
+    public void getCommandById(int commandId) {
         EntityManager em = emf.createEntityManager();
 
         CommandDAO cmd = new CommandDAO(em);
