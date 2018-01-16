@@ -2,6 +2,8 @@ package Managers;
 
 import DAO.CommandDAO;
 import DAO.UserDAO;
+import ORM.ORMCommand;
+import sun.plugin2.message.Message;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -30,5 +32,19 @@ public class Commandmanager {
         } finally {
             em.close();
         }
+    }
+    public void addCommand(String message){
+        EntityManager em = emf.createEntityManager();
+        CommandDAO cmddao = new CommandDAO(em);
+        em.getTransaction().begin();
+        try {
+
+            cmddao.addCommand(new ORMCommand(message));
+            em.getTransaction().commit();
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
     }
 }

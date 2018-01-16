@@ -1,4 +1,6 @@
-import Model.Command;
+
+import Managers.Commandmanager;
+import ORM.ORMCommand;
 import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageEvent;
 
@@ -11,9 +13,10 @@ public class MessageListener implements IListener<MessageEvent>{
         //filters de bot messages en messages die niet met '!' beginnen.
         if (event.getAuthor().isBot() == false){
 
-            Command command = new Command(event.getMessage().getFormattedContent());
+            ORMCommand command = new ORMCommand(event.getMessage().getFormattedContent());
 
-
+            Commandmanager mgr = new Commandmanager();
+            mgr.addCommand(command.getCommand());
             //filtert de tekst die na het command komt
 
 
