@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class Commandmanager {
 
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("database");
+    private  EntityManagerFactory emf;
 
     public void getCommandById(int commandId) {
         EntityManager em = emf.createEntityManager();
@@ -34,6 +34,9 @@ public class Commandmanager {
         }
     }
     public void addCommand(String message){
+        System.out.println("testding");
+        emf = Persistence.createEntityManagerFactory("database");
+        System.out.println("test2");
         EntityManager em = emf.createEntityManager();
         CommandDAO cmddao = new CommandDAO(em);
         em.getTransaction().begin();
